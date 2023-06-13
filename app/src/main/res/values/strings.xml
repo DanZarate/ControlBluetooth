@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Smart Knob UMNG</string>
+    <string name="boton_encender">Fader</string>
+    <string name="boton_apagar">Surround</string>
+    <string name="text_dato">EN ESPERA</string>
+    <string name="text_titulo">CONTROL LED</string>
+    <string name="boton_desconectar">Seleccionar Dispositivo BT</string>
+    <string name="title_activity_radio">radio</string>
+    <string name="dispositivos">DISPOSITIVOS VINCULADOS</string>
+    <string name="tema">TEMA</string>
+    <string name="radio">RADIO</string>
+    <string name="cd">CERRAR</string>
+    <string name="medio">MEDIO</string>
+    <string name="maximo">MAXIMO</string>
+    <string name="minimo">MINIMO</string>
+    <string name="tape_1">TAPE I</string>
+    <string name="tape_2">TAPE II</string>
+    <string name="Sitios">Sitios turisticos</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="dispositivo">Sin conexión BT:</string>
+</resources>

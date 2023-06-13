@@ -1,0 +1,24 @@
+    <resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=6F:8E:37:49:2E:80:24:8F:E9:93:C0:9F:2C:87:6C:23:0A:74:29:E1%3Bcom.example.controlbluetooth
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    6F:8E:37:49:2E:80:24:8F:E9:93:C0:9F:2C:87:6C:23:0A:74:29:E1
+
+    SHA-1 certificate fingerprint:
+    6F:8E:37:49:2E:80:24:8F:E9:93:C0:9F:2C:87:6C:23:0A:74:29:E1
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyClBwwGSC14Nv6ethVcpHD_1hwYLQPqIxs</string>
+</resources>

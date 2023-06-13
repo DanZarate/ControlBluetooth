@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/IdFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cocina"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/idBufferIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#AB221F1F"
+        android:gravity="center_horizontal"
+        android:rotation="0"
+        android:text="@string/text_dato"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/IdDesconectar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#C12371F8"
+        android:drawableLeft="@drawable/ic_bluetooth_disabled_black_24dp"
+        android:text="@string/boton_desconectar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idConexion">
+
+        <Button
+            android:id="@+id/IdCD"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:background="#D8F80C0C"
+            android:drawableLeft="@drawable/ic_disc_full_black"
+            android:drawablePadding="2dp"
+            android:text="@string/cd"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/idMaximo"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:background="#D8FF5722"
+            android:drawableLeft="@android:drawable/stat_sys_upload"
+            android:drawablePadding="2dp"
+            android:text="@string/maximo"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/idMinimo"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:background="#D80C92F8"
+            android:drawableLeft="@android:drawable/stat_sys_download"
+            android:drawablePadding="2dp"
+            android:text="@string/minimo"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/IdTema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/tema"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#ee8b7b"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/idConexion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob"
+        android:layout_width="259dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="36dp"
+        android:clickable="false"
+        android:rotation="90"
+        android:rotationX="0"
+        app:kAnimation="true"
+        app:kBorderColor="@color/common_google_signin_btn_text_dark_focused"
+        app:kBorderWidth="2dp"
+        app:kDefaultState="39"
+        app:kIndicatorWidth="10dp"
+        app:kKnobColor="#C9737C7E"
+        app:kKnobDrawable="1"
+        app:kKnobDrawableRotates="false"
+        app:kMaxAngle="270"
+        app:kMinAngle="0"
+        app:kNumberOfStates="40"
+        app:kSelectedStateMarkerColor="#D61010"
+        app:kShowBalloonValues="true"
+        app:kStateMarkersAccentColor="#D7FDD835"
+        app:kStateMarkersColor="#C4039DE5"
+        app:kStateMarkersWidth="5dp"
+        app:kSwipe="circular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBufferIn" />
+
+    <TextView
+        android:id="@+id/Posicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLOSED"
+        android:textColor="#AF1616"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/knob"
+        app:layout_constraintEnd_toEndOf="@+id/knob"
+        app:layout_constraintStart_toStartOf="@+id/knob"
+        app:layout_constraintTop_toTopOf="@+id/knob" />
+
+    <TextView
+        android:id="@+id/idConectado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AB221F1F"
+        android:gravity="center_horizontal"
+        android:text="@string/dispositivo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/IdDesconectar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/knob" />
+
+    <Button
+        android:id="@+id/idConexion"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:drawableLeft="@drawable/ic_bluetooth2_disabled_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/IdTema"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
